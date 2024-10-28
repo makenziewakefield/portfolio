@@ -1,10 +1,36 @@
+/* Initial header styling */
 .header-section {
   background-color: #34685C;
+  color: #EF7401;
   text-align: center;
-  padding: 1rem;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  font-size: 2rem;
+  transition: all 1s ease;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  /* Adjusted styling when scrolled */
+  &.header--scrolled {
+    padding: 3rem 2rem 1rem;
+    background-color: #34685C;
+    text-align: center;
+  }
 }
 
+/* Initial header name styling */
 .header-name {
+  font-size: 7rem;
   color: #EF7401;
-  font-size: 9rem;
+  margin: 0;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+
+  /* Shrinks font size when scrolled */
+  .header--scrolled & {
+    font-size: 2rem;
+    transform: translateY(-50%); /* Slight upward shift */
+  }
 }
