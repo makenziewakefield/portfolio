@@ -1,6 +1,7 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 html, body {
+  background-color: #34685C;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

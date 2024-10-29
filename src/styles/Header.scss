@@ -3,8 +3,8 @@
   background-color: #34685C;
   color: #EF7401;
   text-align: center;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
   font-size: 2rem;
   transition: all 1s ease;
   position: fixed;
@@ -15,7 +15,7 @@
 
   /* Adjusted styling when scrolled */
   &.header--scrolled {
-    padding: 3rem 2rem 1rem;
+    padding: 2.5rem 1rem 1rem;
     background-color: #34685C;
     text-align: center;
   }
@@ -23,14 +23,14 @@
 
 /* Initial header name styling */
 .header-name {
-  font-size: 7rem;
+  font-size: 8rem;
   color: #EF7401;
   margin: 0;
-  transition: font-size 0.3s ease, transform 0.3s ease;
+  transition: font-size 1s ease, transform 1s ease;
 
   /* Shrinks font size when scrolled */
   .header--scrolled & {
-    font-size: 2rem;
+    font-size: 1.5rem;
     transform: translateY(-50%); /* Slight upward shift */
   }
 }
